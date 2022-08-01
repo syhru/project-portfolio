@@ -1,0 +1,749 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+/* STYLE */
+
+body {
+
+    background-color: #030303e3;
+    padding-left: 8rem;
+
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8rem;
+    background-color: #181818;
+}
+
+/* FONT GOOGLE */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+
+
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+
+    main {
+        width: 100%;
+
+    }
+}
+
+
+
+
+
+.html::after {
+
+    left: 2rem;
+    top: 4rem;
+    margin-top: 2rem;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 23px;
+    content: "<html>";
+    color: rgb(81, 81, 82);
+}
+
+.body::after {
+    left: 4rem;
+    top: 6rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 23px;
+    content: "<body>";
+    color: rgb(81, 81, 82);
+}
+
+/* BAGIAN MAIN MENU */
+
+.main-menu {
+
+    width: 130px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #181818;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    list-style-type: disc;
+    position: fixed;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+
+}
+
+/* MENU TOP */
+.main-menu_top {
+
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: black;
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    line-height: 25px;
+    list-style-type: disc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-size-adjust: 100%;
+    margin-bottom: 50%;
+}
+
+.main-menu .logo {
+
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+}
+
+.main-menu_top .logo span {
+
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 40.5px;
+    list-style: disc;
+    margin-top: 1px;
+    text-decoration: none;
+    font-family: 'Viga', sans-serif;
+}
+
+.main-menu_top span {
+
+    font-family: "Open Sans";
+    margin-top: 2px;
+    color: rgb(165, 165, 165);
+    font-size: 12px;
+
+}
+
+
+/* MENU NAV */
+
+.main-menu_nav {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 24px;
+    list-style-type: disc;
+    align-items: center;
+    border-top-color: rgb(40, 40, 40);
+    border-top-style: solid;
+    border-top-width: 1px;
+    -webkit-box-align: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+
+}
+
+.main-menu_nav a {
+
+    width: 130px;
+    border-bottom-color: rgb(40, 40, 40);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: rgb(144, 144, 150);
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    line-height: 55px;
+    list-style-type: disc;
+    text-align: center;
+    position: relative;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    transition-delay: 0s, 0s;
+    transition-duration: 0.3s, 0.3s;
+    transition-property: color;
+    transition-timing-function: ease, ease;
+}
+
+.main-menu_nav a:hover {
+
+    color: #08FDD8;
+}
+
+
+/* SOCIAL */
+
+.social {
+
+
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(144, 144, 150);
+    list-style-image: none;
+    list-style-position: outside;
+}
+
+.social li {
+    position: relative;
+    top: 60px;
+    left: 5px;
+    display: list-item;
+    text-indent: 5px;
+
+
+}
+
+.social li a {
+
+    padding-bottom: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 20px;
+    color: rgb(144, 144, 150);
+}
+
+.social a:hover {
+    color: rgb(8, 253, 216);
+}
+
+
+/* BAGIAN MAIN */
+
+
+.section-full {
+    padding: 9rem 3rem;
+    min-height: 100vh;
+    bottom: 50px;
+
+    position: relative;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+
+}
+
+.section-full:first-child {
+    padding-left: 4rem;
+    padding-top: 16rem;
+}
+
+
+#section-home {
+
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-box-align: center;
+
+}
+
+#section-home,
+.text-home {
+    position: relative;
+    z-index: 1;
+
+}
+
+
+/* Home */
+.text-home {
+
+    padding-left: 2rem;
+    position: relative;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 800;
+    font-style: oblique;
+    line-height: 80px;
+    position: relative;
+}
+
+h1::before {
+
+    left: -15px;
+    margin-top: -3rem;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 18px;
+    content: "<h1>";
+    color: rgb(81, 81, 82);
+}
+
+h1::after {
+
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    font-family: 'La Belle Aurore', 'cursive';
+    font-size: 18px;
+    color: rgb(81, 81, 82);
+    content: "</h1>";
+}
+
+
+.gray-text {
+
+    font-family: "Open Sans", sans-serif;
+    padding-top: 2;
+    margin-left: 1.5rem;
+    color: rgb(141, 141, 141);
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.gray-text::before {
+
+
+    left: -2.3rem;
+    margin-top: -1.2rem;
+    color: rgb(81, 81, 82);
+    font-size: 20px;
+    font-family: 'La Belle Aurore', 'cursive';
+    position: absolute;
+    content: "<p>";
+}
+
+.gray-text::after {
+
+    left: -2.3rem;
+    margin-top: 2.2rem;
+    color: rgb(81, 81, 82);
+    font-size: 20px;
+    font-family: 'La Belle Aurore', 'cursive';
+    position: absolute;
+    content: "</p>";
+}
+
+.text-home p {
+
+    position: relative;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.flat-button {
+
+    display: block;
+    height: 50px;
+    margin-top: 50px;
+    max-width: 220px;
+    position: relative;
+    width: 220px;
+    color: #08FDD8;
+    font-optical-sizing: 14px;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration-color: rgb(8, 253, 216);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+
+}
+
+.flat-button .bg {
+    height: 50px;
+    left: -5%;
+    font-family: "Open sans-serif", sans-serif;
+    font-size: 14px;
+    color: #08fdd8;
+    background-color: rgb(8, 253, 216);
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: initial;
+    background-origin: padding-box;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration-thickness: auto;
+    position: absolute;
+    width: 0px;
+    cursor: pointer;
+    z-index: 3;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transform: matrix(1, 0, -0.176327, 1, 0, 0) skewX(-10deg);
+}
+
+.flat-button .blass {
+    box-sizing: border-box;
+    height: 50px;
+    width: 220px;
+    left: 0px;
+    position: absolute;
+    border-bottom-color: rgb(8, 253, 216);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1px;
+    border-left-color: rgb(8, 253, 216);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgb(8, 253, 216);
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(8, 253, 216);
+    border-top-style: solid;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.flat-button .text {
+
+    height: 50px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 220px;
+    z-index: 4;
+}
+
+/* My Portfolio */
+
+.myportfolio {
+
+    padding-left: 3rem;
+}
+
+.myportfolio h2 {
+
+    font-size: 3rem;
+    color: #08FDD8;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+
+.myportfolio h2::before {
+    left: 10%;
+    margin-top: -15px;
+    position: absolute;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 20px;
+    content: "<h2>";
+    color: rgb(81, 81, 82);
+}
+
+.myportfolio h2::after {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+    font-family: 'La Belle Aurore', 'cursive';
+    font-size: 18px;
+    color: rgb(81, 81, 82);
+    content: "</h2>";
+}
+
+
+.myportfolio .info {
+
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.myportfolio .info::before {
+
+    left: 11%;
+    margin-top: -2%;
+    color: rgb(81, 81, 82);
+    font-size: 20px;
+    font-family: 'La Belle Aurore', 'cursive';
+    position: absolute;
+    content: "<p>";
+}
+
+.myportfolio .info::after {
+
+    left: 11%;
+    margin-top: 2%;
+    color: rgb(81, 81, 82);
+    font-size: 20px;
+    font-family: 'La Belle Aurore', 'cursive';
+    position: absolute;
+    content: "<p>";
+}
+
+
+.myportfolio .seemoree {
+
+    display: block;
+    margin-top: 50px;
+    position: relative;
+    color: #08FDD8;
+    font-optical-sizing: 14px;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration-color: rgb(8, 253, 216);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+}
+
+.myportfolio .btn {
+
+    height: 50px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 220px;
+
+}
+
+.myportfolio .btn-blass {
+    height: 50px;
+    width: 210px;
+    left: 0px;
+    position: absolute;
+    border-bottom-color: rgb(8, 253, 216);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1px;
+    border-left-color: rgb(8, 253, 216);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgb(8, 253, 216);
+    border-right-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(8, 253, 216);
+    border-top-style: solid;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.myportfolio .btn-bg {
+    height: 50px;
+    left: -5%;
+    font-family: "Open sans-serif", sans-serif;
+    font-size: 14px;
+    color: #08fdd8;
+    background-color: rgb(8, 253, 216);
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-image: initial;
+    background-origin: padding-box;
+    letter-spacing: 4px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration-thickness: auto;
+    position: absolute;
+    width: 0px;
+    cursor: pointer;
+    z-index: 3;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transform: matrix(1, 0, -0.176327, 1, 0, 0) skewX(-10deg);
+}
+
+.flex-container-colum {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    max-width: 70%;
+
+}
+
+.flex-container-row {
+
+    display: flex;
+}
+
+.box {
+    width: 100%;
+    height: 15rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-top-color: #181818;
+    border-right-color: #181818;
+    border-bottom-color: #181818;
+    border-left-color: #181818;
+    background: #181818;
+}
